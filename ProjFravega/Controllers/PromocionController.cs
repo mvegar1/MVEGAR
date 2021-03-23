@@ -224,8 +224,8 @@ namespace ProjFravega.Controllers
             }
             else if (promocion.FechaFin < promocion.FechaInicio)
             {
-                ModelState.AddModelError("FechaInicio", "La fecha final de la promoción no puede ser mayo que la fecha inicial");
-                ModelState.AddModelError("FechaFin", "La fecha final de la promoción no puede ser mayo que la fecha inicial");
+                ModelState.AddModelError("FechaInicio", "La fecha final de la promoción no puede ser mayor que la fecha inicial");
+                ModelState.AddModelError("FechaFin", "La fecha final de la promoción no puede ser mayor que la fecha inicial");
                 Resultado = false;
             }
 
